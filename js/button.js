@@ -124,12 +124,12 @@ function start_action() {
 // 选择玩法
 function select_game(game_type) {
     alert('123')
-    $('.selector').css('display', 'none')
-    $('#ch_type').html(game_type)
-    let img = $("#ch_clock img")
-    if (game_type === 'panda') {
-        img.attr('src', 'img/panda.jpg')
-    }else{
-        img.attr('src', 'img/dragon.png')
-    }
+    // $('.selector').css('display', 'none')
+    // $('#ch_type').html(game_type)
+    // let img = $("#ch_clock img")
+    // if (game_type === 'panda') {
+    //     img.attr('src', 'img/panda.jpg')
+    // }else{
+    //     img.attr('src', 'img/dragon.png')
+    // }
 }
