@@ -1,19 +1,3 @@
-function show_chip1(data){
-    console.log(data)
-    let seats = $('.seat');
-
-    seats.each(function(index){
-
-        if (index === 0) { return }
-
-
-        let chips_obj = $(this)
-
-        data[index - 1].forEach(function(element) {
-            chips_obj.append(element)
-        })
-    })
-}
 
 function show_chip(data) {
     console.log(data)
