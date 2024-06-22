@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baccarat Panda/Dragon Payout Exerciser</title>
+    <!--  图标库  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="sass/selector.less" />
+    <link rel="stylesheet/less" type="text/css" href="sass/table.less" />
+    <link rel="stylesheet/less" type="text/css" href="sass/result.less" />
+<!--    <link rel="stylesheet/less" type="text/css" href="css/index.less" />-->
+<!--    <link rel="stylesheet/less" type="text/css" href="css/window.less" />-->
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <!--  -->
+    <script src="js/graph.js"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+</style>
+<body>
+
+<!-- 选择的练习 -->
+<span style="display: none">panda</span>
+
+<!--  选择要练习的  -->
+<div class='selector' style="display: none">
+    <h1>Please Select Your Exercise</h1>
+    <div><img src="img/panda.jpg" alt=""><span>Panda</span></div>
+    <div><img src="img/dragon.png" alt=""><span>Dragon</span></div>
+</div>
+
+
+
+
+
+
+<div style="width: 100vw; height: 100vh; display: flex; flex-direction: row">
+    <!-- 桌子 -->
+    <div class="table">
+        <div class="clock"><img src="img/panda.jpg" alt=""><span>00:06</span></div>
+
+        <div class="seat_row">
+            <div class="seat">
+                <p>Table 1</p>
+                <div class="chips">
+                    <div class="chip">
+                        <div class="white"></div>
+                        <div class="yellow"></div>
+                        <div class="white"></div>
+                        <div class="yellow"></div>
+                        <div class="white"></div>
+                    </div>
+                    <div class="chip">
+                        <div class="white"></div>
+                        <div class="blue"></div>
+                        <div class="white"></div>
+                        <div class="blue"></div>
+                        <div class="white"></div>
+                    </div>
+                    <div class="chip">
+                        <div class="white"></div>
+                        <div class="purple"></div>
+                        <div class="white"></div>
+                        <div class="purple"></div>
+                        <div class="white"></div>
+                    </div>
+                    <div class="chip">
+                        <div class="purple"></div>
+                        <div class="white"></div>
+                        <div class="purple"></div>
+                        <div class="white"></div>
+                        <div class="purple"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="seat"><p>Table 2</p></div>
+            <div class="seat"><p>Table 3</p></div>
+            <div class="seat"><p>Table 4</p></div>
+        </div>
+
+        <div class="seat_row">
+            <div class="seat"><p>Table 5</p></div>
+            <div class="seat"><p>Table 6</p></div>
+            <div class="seat"><p>Table 7</p></div>
+            <div class="seat"><p>Table 8</p></div>
+        </div>
+    </div>
+
+    <!-- 统计 -->
+    <div class="result">
+        <div class="round"><span>#1</span><span>00:60</span><span>√</span></div>
+        <div class="round"><span>#2</span><span>00:60</span><span>×</span></div>
+        <div class="round"><span>#3</span><span>00:60</span><span>√</span></div>
+        <div class="round"><span>#4</span><span>00:60</span><span>√</span></div>
+        <div class="round"><span>#5</span><span>00:60</span><span>×</span></div>
+        <div class="round"><div>Start</div></div>
+    </div>
+
+</div>
+
+</body>
+</html>
