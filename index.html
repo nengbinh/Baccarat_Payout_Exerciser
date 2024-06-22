@@ -11,12 +11,14 @@
     <link rel="stylesheet/less" type="text/css" href="sass/selector.less" />
     <link rel="stylesheet/less" type="text/css" href="sass/table.less" />
     <link rel="stylesheet/less" type="text/css" href="sass/result.less" />
-<!--    <link rel="stylesheet/less" type="text/css" href="css/index.less" />-->
-<!--    <link rel="stylesheet/less" type="text/css" href="css/window.less" />-->
     <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <!--  -->
-    <script src="js/graph.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/create_chip.js"></script>
+    <script src="js/show_chip.js"></script>
+
 </head>
 <style>
     * {
@@ -49,49 +51,45 @@
         <div class="seat_row">
             <div class="seat">
                 <p>Table 1</p>
-                <div class="chips">
-                    <div class="chip">
-                        <div class="white"></div>
-                        <div class="yellow"></div>
-                        <div class="white"></div>
-                        <div class="yellow"></div>
-                        <div class="white"></div>
-                    </div>
-                    <div class="chip">
-                        <div class="white"></div>
-                        <div class="blue"></div>
-                        <div class="white"></div>
-                        <div class="blue"></div>
-                        <div class="white"></div>
-                    </div>
-                    <div class="chip">
-                        <div class="white"></div>
-                        <div class="purple"></div>
-                        <div class="white"></div>
-                        <div class="purple"></div>
-                        <div class="white"></div>
-                    </div>
-                    <div class="chip">
-                        <div class="purple"></div>
-                        <div class="white"></div>
-                        <div class="purple"></div>
-                        <div class="white"></div>
-                        <div class="purple"></div>
-                    </div>
-                </div>
+                <div class="chips"></div>
             </div>
 
+            <div class="seat">
+                <p>Table 2</p>
+                <div class="chips"></div>
+            </div>
 
-            <div class="seat"><p>Table 2</p></div>
-            <div class="seat"><p>Table 3</p></div>
-            <div class="seat"><p>Table 4</p></div>
+            <div class="seat">
+                <p>Table 3</p>
+                <div class="chips"></div>
+            </div>
+
+            <div class="seat">
+                <p>Table 4</p>
+                <div class="chips"></div>
+            </div>
         </div>
 
         <div class="seat_row">
-            <div class="seat"><p>Table 5</p></div>
-            <div class="seat"><p>Table 6</p></div>
-            <div class="seat"><p>Table 7</p></div>
-            <div class="seat"><p>Table 8</p></div>
+            <div class="seat">
+                <p>Table 5</p>
+                <div class="chips"></div>
+            </div>
+
+            <div class="seat">
+                <p>Table 6</p>
+                <div class="chips"></div>
+            </div>
+
+            <div class="seat">
+                <p>Table 7</p>
+                <div class="chips"></div>
+            </div>
+
+            <div class="seat">
+                <p>Table 8</p>
+                <div class="chips"></div>
+            </div>
         </div>
     </div>
 
@@ -102,7 +100,7 @@
         <div class="round"><span>#3</span><span>00:60</span><span>√</span></div>
         <div class="round"><span>#4</span><span>00:60</span><span>√</span></div>
         <div class="round"><span>#5</span><span>00:60</span><span>×</span></div>
-        <div class="round"><div>Start</div></div>
+        <div class="round"><div id="mainButton" onclick="start_action(this)">Start</div></div>
     </div>
 
 </div>
