@@ -91,10 +91,13 @@ function start_action() {
 
             // 更新结果
             if (Number(user_answer) !== real_answer) {
-                alert('(回答错误) - 正确答案是 ' + real_answer)
+                alert(`
+                (Wrong answer)
+                Your answer: ${user_answer}
+                Correct answer: ${real_answer}`)
                 result[result_index] = [timer.html(), `${user_answer}_${real_answer}`, 'w']
             }else{
-                alert('Very Good (回答正确)')
+                alert('Good answer, you are right!')
                 result[result_index] = [timer.html(), `${real_answer}_${real_answer}`, 'c']
             }
             result_index += 1
@@ -105,7 +108,10 @@ function start_action() {
                 button.text('Exit')
             }else{
                 //
-                alert('Click Button to Continue (点击按钮继续下个游戏)')
+                alert(`
+                Click Next to Continue 
+                (点击按钮继续)
+                `)
                 // 更新按钮
                 button.text('Next')
             }
@@ -124,6 +130,7 @@ function start_action() {
 // 选择玩法
 function select_game(game_type) {
     $('.selector').css('display', 'none')
+    $('#table_container').css('display', 'flex')
     $('#ch_type').html(game_type)
     let img = $("#ch_clock img")
     if (game_type === 'panda') {
@@ -131,4 +138,7 @@ function select_game(game_type) {
     }else{
         img.attr('src', 'img/dragon.png')
     }
+    alert(`
+    Click Bottom-Right Button to start exerciser.
+    `)
 }
